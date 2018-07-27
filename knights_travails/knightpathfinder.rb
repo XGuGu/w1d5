@@ -50,8 +50,6 @@ class KnightPathFinder
       new_moves.each do |new_move|
         new_node = PolyTreeNode.new(new_move)
         new_node.parent = current_node
-        new_children = new_node.children
-
         queue.push(new_node)
       end
     end
